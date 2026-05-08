@@ -1,0 +1,1 @@
+# MedEdge core package
