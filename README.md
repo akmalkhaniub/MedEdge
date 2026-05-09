@@ -62,8 +62,8 @@ Offline Mode → Backend calls Gemma 4 (via local Ollama instance)
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/YOUR_USERNAME/mededge.git
-cd mededge
+git clone https://github.com/akmalkhaniub/MedEdge.git
+cd MedEdge
 ```
 
 ### 2. Start the Backend
