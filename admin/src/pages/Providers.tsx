@@ -74,9 +74,9 @@ function MaskedInput({ value, placeholder }: { value: string; placeholder: strin
 export default function Providers() {
   // API keys from .env are baked in — shown as masked. Real editing would require a backend endpoint.
   const KEYS: Record<string, string> = {
-    GEMINI_API_KEY: 'AIzaSyC6-Ml6ohQfR8eRY_GZ8UEWZYngpmzyO7I',
-    GROQ_API_KEY: 'gsk_0KMQMjz...Q9Ag6a',
-    OPENROUTER_API_KEY: 'sk-or-v1-a4cfb19a...3315f',
+    GEMINI_API_KEY: import.meta.env.VITE_GEMINI_API_KEY || 'AIzaSy... (Set in .env)',
+    GROQ_API_KEY: import.meta.env.VITE_GROQ_API_KEY || 'gsk_... (Set in .env)',
+    OPENROUTER_API_KEY: import.meta.env.VITE_OPENROUTER_API_KEY || 'sk-or-v1-... (Set in .env)',
   }
 
   return (
